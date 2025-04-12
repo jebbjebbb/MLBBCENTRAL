@@ -1,27 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sitemap - MLBB Central</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      padding: 8px 14px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .nav a.active {
+      background-color: black;
+      color: #b6ff00;
+      border: 2px solid #b6ff00;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .sitemap-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: black;
+      border-radius: 8px;
+      padding: 20px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      font-size: 0.95em;
+    }
+
+    .line {
+      width: 4px;
+      height: 30px;
+      background-color: white;
+      margin: 0 auto;
+    }
+
+    .horizontal-line {
+      height: 4px;
+      width: 100%;
+      max-width: 500px;
+      background-color: white;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-  <div class="navbar">
+  <div class="nav">
     <a href="index.html">HOME</a>
     <a href="purpose.html">PURPOSE</a>
     <a href="audience.html">AUDIENCE</a>
-    <a href="sitemap.html" class="active">SITEMAP</a>
+    <a class="active" href="sitemap.html">SITEMAP</a>
     <a href="wireframe.html">WIREFRAME</a>
   </div>
 
   <div class="container">
     <h1>SITEMAP</h1>
-    <div class="content-box">
-      <p>
-        The sitemap includes five main pages: <span class="highlight">Home</span>, <span class="highlight">Purpose</span>, 
-        <span class="highlight">Audience</span>, <span class="highlight">Sitemap</span>, and <span class="highlight">Wireframe</span>. 
-        Each section is designed to give a full view of the MLBB Central experience.
-      </p>
+    <h2>MLBB Central Website Structure</h2>
+    
+    <div class="sitemap-grid">
+      <div class="row">
+        <div class="box">
+          <strong>HOME PAGE</strong><br/>
+          Contains introduction for the page.<br/>
+          Links to other pages.
+        </div>
+      </div>
+      
+      <div class="line"></div>
+
+      <div class="row">
+        <div class="box">
+          <strong>ABOUT PAGE</strong><br/>
+          Contains information about what the page is for.
+        </div>
+        <div class="box">
+          <strong>CONTACT PAGE</strong><br/>
+          Contains contact information about the creator.
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="row">
+        <div class="box">
+          <strong>OTHER PAGE 1</strong><br/>
+          Contains additional info about the home page.
+        </div>
+        <div class="box">
+          <strong>OTHER PAGE 2</strong><br/>
+          Contains additional info about the home page and other page 1.
+        </div>
+      </div>
     </div>
   </div>
 </body>
