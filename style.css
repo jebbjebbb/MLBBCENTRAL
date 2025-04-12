@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: url('https://cdn.oneesports.gg/cdn-data/2023/09/MLBB_patch1.8.20_preview-1024x576.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: white;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.navbar a.active {
+  background-color: black;
+  color: #2ecc71;
+  border: 2px solid black;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.content-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.content-box p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #f1c40f;
+  font-weight: bold;
+}
