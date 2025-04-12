@@ -4,9 +4,76 @@
   <meta charset="UTF-8">
   <title>Wireframe - MLBB Central</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      color: black;
+      border: 2px solid #00ffae;
+    }
+
+    .nav a.active {
+      background-color: black;
+      color: #00ffae;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .box {
+      border: 2px dashed #aaa;
+      padding: 15px;
+      background-color: #f8f8f8;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .placeholder {
+      height: 60px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      background-color: #e0e0e0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <div class="navbar">
+  <div class="nav">
     <a href="index.html">HOME</a>
     <a href="purpose.html">PURPOSE</a>
     <a href="audience.html">AUDIENCE</a>
@@ -14,13 +81,39 @@
     <a href="wireframe.html" class="active">WIREFRAME</a>
   </div>
 
-  <div class="container">
-    <h1>WIREFRAME</h1>
-    <div class="content-box">
-      <p>
-        This page outlines the layout of MLBB Central. From the navigation bar to content containers, 
-        each element is placed with purpose to ensure a smooth and enjoyable experience for every <span class="highlight">Legend</span>.
-      </p>
+  <h1>WIREFRAME</h1>
+  <div class="grid">
+    <div class="box">
+      <h3>HOME PAGE</h3>
+      <div class="placeholder">Title & Introduction</div>
+      <div class="placeholder">Picture</div>
+      <div class="placeholder">Picture</div>
+      <div class="footer">Footer</div>
+    </div>
+    <div class="box">
+      <h3>ABOUT PAGE</h3>
+      <div class="placeholder">Text Paragraph</div>
+      <div class="placeholder">Text Paragraph</div>
+      <div class="footer">Footer</div>
+    </div>
+    <div class="box">
+      <h3>CONTACT PAGE</h3>
+      <div class="placeholder">Contact Info Text</div>
+      <div class="footer">Footer</div>
+    </div>
+    <div class="box">
+      <h3>IMPORTANCE PAGE</h3>
+      <div class="placeholder">Paragraph</div>
+      <div class="placeholder">Text Paragraph</div>
+      <div class="placeholder">Paragraph</div>
+      <div class="footer">Footer</div>
+    </div>
+    <div class="box">
+      <h3>IMPACT PAGE</h3>
+      <div class="placeholder">Paragraph</div>
+      <div class="placeholder">Text Paragraph</div>
+      <div class="placeholder">Paragraph</div>
+      <div class="footer">Footer</div>
     </div>
   </div>
 </body>
